@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> ABC Survey Form</title>
+	<link href="surveyForm.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">ABC Enterprise Survey Form</h1>
+    <p id="description" class="description text-center">
+      Please fill out the survey form to help us imporve our website.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="agenumber">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="18"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="fulltime">Full Time Employment</option>
+        <option value="parttime">Part Time Employment</option>
+        <option value="selfemployed">Self-Employed</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend our website to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label>
+      
+       <label><input
+          name="user-recommend"
+          value="noway"
+          type="radio"
+          class="input-radio"
+        />No Way</label>
+      
+      
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite feature of our website?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="product">Products</option>
+        <option value="projects">Past Projects</option>
+        <option value="webboard">Webboard</option>
+        <option value="blogs">Blogs</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="customer service"
+          type="checkbox"
+          class="input-checkbox"
+        />Customer Services</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="product variety"
+          type="checkbox"
+          class="input-checkbox"
+        />Product Variety</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="pricing"
+          type="checkbox"
+          class="input-checkbox"
+        />Pricing</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="social-media"
+          type="checkbox"
+          class="input-checkbox"
+        />Social Media Present</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="community-support"
+          type="checkbox"
+          class="input-checkbox"
+        />Community Support</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="response-time"
+          type="checkbox"
+          class="input-checkbox"
+        />Response Time</label
+      >
+      
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+  </body>
+</html>
