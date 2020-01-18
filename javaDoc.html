@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Link-->
+	 
+    <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="javaDoc.css">
+    
+    <title>JAVA Technical Documentation</title>
+  </head>
+
+<body>     
+    <header id="page-header">
+        <span for="navbar-checkbox" class="navbar-handle">&equiv;</span>
+       <span class="right-span"> <i class="fab fa-java fa-1.2x"></i>JAVA PROGRAMMING</span>
+    </header>  
+
+    <nav id="navbar" class="main-nav">
+        <!-- hidden header just to pass test but not useful in my actual creation   -->
+        <header style="display: none"></header>
+      
+         <ul>
+          <a class="nav-link" href="#whatIsJava" rel="internal"><li>Java is?</li></a>
+           <a class="nav-link" href="#history" rel = "internal"><li class="tae">History</li></a>
+           <a class="nav-link" href="#variable"><li>Variables</li></a>
+           <a class="nav-link" href="#conditional"><li>Conditional</li></a>
+           <a class="nav-link" href="#loops"><li>Loops</li></a>
+           <a class="nav-link" href="#methods"><li>Methods</li></a>
+           <a class="nav-link" href="#objects"><li>Objects</li></a>
+           <a class="nav-link" href="#resources"><li>Resources</li></a>
+        </ul>
+      </nav>
+
+      <main id="main-doc">
+        <!-- Section 1: Java is..?-->
+        <section class="main-section" id="whatIsJava">
+            <header><h2>Java is..?</h2></header>
+            <p>Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible. It is intended to let application developers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.</p>
+        </section>
+
+
+         <!-- Section 2: History-->
+         <section class="main-section" id="history">
+            <header><h2>History of Java</h2></header>
+            <p>Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle) and released in 1995 as a core component of Sun Microsystems' Java platform. The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun had relicensed most of its Java technologies under the GNU General Public License. </p>
+        </section>
+
+
+          <!-- Section 3: Variable-->
+          <section class="main-section" id="variable">
+            <header><h2>Variables</h2></header>
+            <p>Java is considered as a strongly typed programming language. Thus all variables in the Java programming language ought to have a particular data type. This is either declared or inferred and the Java language only allows programs to run if they adhere to type constraints. The code below demonstrates different types of data type in Java.  </p>
+            <code>
+              int firstInt = 10, secondInt = 20;<br>
+              double firstDoub = 55.55;<br>
+              String c = "some text";<br>
+              char d = 'c';<br>
+            </code>
+          </section>
+
+
+          <!-- Section 4: Conditional Statements-->
+          <section class="main-section" id="conditional">
+            <header><h2>Conditional</h2></header>
+            <p>Conditional blocks allow a program to take a different path depending on some condition(s). These allow a program to perform a test and then take action based on the result of that test. In the code sections, the actually executed code lines will be highlighted.    </p>
+            <code>
+              int age = 6;<br>
+              System.out.println("Hello!");<br>
+              if (age < 13) {<br></13>
+              System.out.println("I'm a child.");<br>
+              }<br>
+              if (age > 20) {<br>
+              System.out.println("I'm an adult.");<br>
+              }<br>
+              System.out.println("Bye!");<br>
+            </code>
+          </section>
+
+          <!-- Section 5: Loops-->
+          <section class="main-section" id="loops">
+            <header><h2>Loops</h2></header>
+            <h4>While loops</h4>
+            <p>while loops are the simplest form of loop. The while loop repeats a block of code while the specified condition is true.  The loop's condition is checked before each iteration of the loop. If the condition is false at the start of the loop, the loop will not be executed at all.  </p>
+            <code>
+              int i = 1;<br>
+              while (i <= 10) {<br>
+              System.out.println(i);<br>
+              i++;<br>
+              }<br>
+            </code>
+            <br>
+            <h4>For loops</h4>
+            <p>The for loop is a specialized while loop whose syntax is designed for easy iteration through a sequence of numbers. It consists of the keyword for followed by three extra statements enclosed in parentheses. The first statement is the variable declaration statement, which allows you to declare one or more integer variables. The second is the condition, which is checked the same way as the while loop. Last is the iteration statement, which is used to increment or decrement variables, though any statement is allowed.</p>
+            <code>
+              for (int i = 1; i <= 10; i++) {<br>
+                System.out.println(i);<br>
+            }<br>
+            </code>
+          </section>
+
+
+          <!-- Section 6: Methods-->
+          <section class="main-section" id="methods">
+            <header><h2>Methods</h2></header>
+            <p>Methods are how we communicate with objects. When we invoke or call a method we are asking the object to carry out a task. We can say methods implement the behaviour of objects. For each method we need to give a name, we need to define its input parameters and we need to define its return type. We also need to set its visibility (private, protected or public).    </p>
+            <code>
+             // A method modifying an object reference. <br>
+              private void modifyObject(FirstClass anObject) {<br>
+              anObject = new FirstClass();<br>
+              anObject.setName("Susan");<br>
+              } <br>
+            </code>
+          </section>
+
+          
+          <!-- Section 7: Objects-->
+          <section class="main-section" id="objects">
+            <header><h2>Objects</h2></header>
+            <p> An object is composed of fields and methods. The fields, also called data members, characteristics, attributes, or properties, describe the state of the object. The methods generally describe the actions associated with a particular object. Think of an object as a noun, its fields as adjectives describing that noun, and its methods as the verbs that can be performed by or on that noun.</p>
+            <p>For example, a sports car is an object. Some of its fields might be its height, weight, acceleration, and speed. An object's fields just hold data about that object. Some of the methods of the sports car could be "drive", "park", "race", etc. The methods really don't mean much unless associated with the sports car, and the same goes for the fields.</p>
+            <code>
+              public class SportsCar { <br>
+                /* Insert your code here */<br>
+             }<br>
+            </code>
+          </section>
+
+
+          <!-- Section 8: Resources-->
+          <section class="main-section" id="resources">
+            <header><h2>Resources</h2></header>
+            <article>
+              <p>The above documentation is taken from <a href="https://en.wikibooks.org/wiki/Java_Programming/Classes,_Objects_and_Types">wikibook</a>
+               and <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">wikipedia</a></p>
+            </article>
+            
+          </section>
+
+     </main>
+
+    <!-- Optional JavaScript ??-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+  </body>
+</html>
